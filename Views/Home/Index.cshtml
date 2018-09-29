@@ -1,2 +1,26 @@
-﻿<h1>Home</h1>
+﻿@model IEnumerable<Pergunta>
+
+<img src="~/collabedit.png" />
+
+<h1>Home do @ViewBag.Nome</h1>
+<h2>@ViewData["NomeDoAluno"]</h2>
+<br />
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>
+            <p>@item.Id</p>
+            <p>@item.Autor</p>
+            <p>@item.Descricao</p>
+        </li>
+    }
+</ul>
+
+@*<p>@Model.Id</p>
+    <p>@Model.Autor</p>
+    <p>@Model.Descricao</p>*@
+
+<br />
+
 <p>Twitter @@JeffersonBarros</p>

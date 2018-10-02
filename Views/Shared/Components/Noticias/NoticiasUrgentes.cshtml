@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Fiap01.ViewComponents.Noticia>
+<ul>
+    <p>Noticias Urgentes</p>
+    @foreach (var item in Model)
+    {
+        <li>
+            @item.Titulo
+        </li>
+    }
+</ul>
